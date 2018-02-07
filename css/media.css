@@ -1,6 +1,22 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1920px) {
+#benefits .wrap .schedule{
+margin:4% auto;
+}
+#works .wrap .photoset1{
+    width: 89%;
+}
+#works .wrap .title{
+    margin:30px 0 30px 0;
+}
+#works .wrap .collback-button{
+    margin-bottom: 39px;
+
+}
+}
+
 @media only screen and (max-width : 1600px) {
 #nav-block .wrap .nav-logo .nav-bar li a {
     font-size: 19px;
@@ -14,19 +30,42 @@
 }
 #nav-block .wrap .about .info {
     white-space: normal;
+    margin: 5px 23px;
+}
+#nav-block .owl-controls {
+    left: 44.5%;
+}
+#nav-block .scroll-button {
+    left: 43.3%;
+}
+#nav-block .scroll-button a .button-down{
+    width: 28%;
 }
 #benefits .wrap .title p {
-    font-size: 30px;
-    margin-top: 50px;
+    font-size: 28px;
+    margin-top: 42px;
+}
+#works .wrap .title p {
+    font-size: 28px;
+}
+#works .wrap .title{
+    margin-top: 42px;
+}
+#scopes .wrap .title p {
+    font-size: 28px;
+    margin-top: 42px;
 }
 #nav-block .wrap {
-    left: 20.5%;
+    left: 11.5%;
+}
+#works .wrap .photoset1 {
+    width: 89%;
 }
 }
 
 @media only screen and (max-width : 1200px) {
 #nav-block .wrap {
-    left: 21.1%;
+    left: 11.1%;
     height: 70%;
 }
 #nav-block .wrap .nav-logo .logo {
@@ -57,18 +96,76 @@
     white-space: normal;
     font-family: "CenturyGothicBold";
     font-size: 13px;
-    line-height: 16px;
+    line-height: 17px;
     margin: 10px 23px;
 }
 #nav-block .wrap .about .info i {
     font-size: 20px;
 }
+#nav-block .owl-controls{
+    left: 41%;
+}
+#nav-block .scroll-button {
+    left: 39.2%;
+}
+#nav-block .scroll-button a .button-down{
+    width: 25%;
+}
 #nav-block .wrap .about .info .name {
     font-size: 26px;
 }
 #benefits .wrap .title p {
-    font-size: 28px;
-    margin-top: 30px;
+    font-size: 24px;
+    margin-top: 18px;
+}
+#works .wrap .title p{
+    font-size: 24px;
+}
+#works .wrap .title{
+    margin: 18px 0 18px 0;
+}
+#works .wrap .photos {
+    margin-bottom: 3%;
+}
+#works .wrap .photoset1 {
+    width: 89%;
+}
+#works .wrap .photoset1 .photo1{
+    width: 16%;
+}
+#works .wrap .photoset1 .photo2{
+    width: 36.06%;
+    left: -0.7%;
+}
+#works .wrap .photoset1 .photo3{
+    width: 36.16%;
+    right: 1.29%;
+}
+#works .wrap .photoset1 .photo4{
+    width: 16%;
+    right: 0;
+    top: 0px;
+}
+#works .wrap .photoset1 .photo5{
+    width: 43.35%;
+    bottom: 5px;
+}
+#works .wrap .photoset1 .photo6{
+    bottom: 5px;
+    left: -1%;
+    width: 19.37%;
+}
+#works .wrap .photoset1 .photo7{
+    width: 43.2%;
+    /* left: 0; */
+    bottom: 9px;
+}
+#works .wrap .photoset1:after{
+    bottom: 2.2%;
+}
+#scopes .wrap .title p {
+    font-size: 23px;
+    margin-top: 18px;
 }
 }
 
