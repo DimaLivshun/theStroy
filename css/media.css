@@ -1,7 +1,7 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1920px) {
+@media only screen and (max-width : 1918px) {
 #benefits .wrap .schedule{
 margin:4% auto;
 }
@@ -13,8 +13,18 @@ margin:4% auto;
 }
 #works .wrap .collback-button{
     margin-bottom: 39px;
-
 }
+#scopes .wrap .scopes-content ul li .scopes-icon1,.scopes-icon2,.scopes-icon3,.scopes-icon4,.scopes-icon5,.scopes-icon6,.scopes-icon7{
+    top: -4%;
+}
+#scopes .wrap .title p {
+    margin: 30px 0;
+}
+#scopes .wrap .scopes-content ul li span{
+    min-height: 60px;
+}
+#options .wrap .accordeon .acc-head .button-block {
+    width: 6.5%;
 }
 
 @media only screen and (max-width : 1600px) {
@@ -53,13 +63,23 @@ margin:4% auto;
 }
 #scopes .wrap .title p {
     font-size: 28px;
-    margin-top: 42px;
+    margin:20px 0 20px 0;
 }
 #nav-block .wrap {
     left: 11.5%;
 }
 #works .wrap .photoset1 {
     width: 89%;
+}
+#scopes .wrap .scopes-content ul li .scopes-icon1,.scopes-icon2,.scopes-icon3,.scopes-icon4,.scopes-icon5,.scopes-icon6,.scopes-icon7{
+    top: 6%;
+}
+#scopes .wrap .scopes-content ul li span{
+    min-height: 45px;
+}
+#options .wrap .accordeon .acc-head .button-block {
+    width: 7.5%;
+    left: -3.5%;
 }
 }
 
@@ -165,13 +185,31 @@ margin:4% auto;
 }
 #scopes .wrap .title p {
     font-size: 23px;
-    margin-top: 18px;
+    margin:18px 0 18px 0;
+}
+#scopes .wrap .scopes-content ul li .scopes-icon1,.scopes-icon2,.scopes-icon3,.scopes-icon4,.scopes-icon5,.scopes-icon6,.scopes-icon7{
+    top: 2%;
+}
+#scopes .wrap .scopes-content ul li .scopes-icon1,.scopes-icon2,.scopes-icon3,.scopes-icon4,.scopes-icon5,.scopes-icon6,.scopes-icon7{
+    top: -4%;
+}
+#scopes .wrap .scopes-content ul li i {
+    font-size: 16px;
+}
+#scopes .wrap .scopes-content ul li span{
+    min-height: 30px;
+}
+#scopes .wrap .scopes-content ul li span p{
+    font-size: 10px;
+}
+#options .wrap .accordeon .acc-head .button-block {
+    width: 8.5%;
+    left: -4%;
 }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
 }
 
 /* Small Devices, Tablets */

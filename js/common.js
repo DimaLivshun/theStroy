@@ -36,6 +36,23 @@ $(document).ready(function() {
 
 	//Каруселька
 	//Документация: http://owlgraphic.com/owlcarousel/
+	var owl = $(".carousel-reviews");
+	owl.owlCarousel({
+		items : 1,
+		responsive : true,
+		responsiveRefreshRate : 200,
+		itemsCustom : [
+        [0, 1],
+        [450, 1],
+        [600, 1],
+        [700, 1],
+        [1000, 1],
+        [1200, 1],
+        [1400, 1],
+        [1600, 1]
+      ],
+	});
+
 	var owl = $(".carousel");
 	owl.owlCarousel({
 		items : 1,
@@ -261,80 +278,78 @@ $(document).ready(function() {
 		}	
 	}*/
 
-	$(window).resize(function() {
-		if(document.documentElement.clientWidth > 1600) {
-			$("#scopes .scopes-icon1").on({
+
+	//dropdown///////////////////////////////////////////////////
+	$(document).ready(function() {
+	  //прикрепляем клик по заголовкам acc-head
+	    $('.accordeon .acc-head ').on('click', f_acc);
+	});
+
+	function f_acc(){
+	//скрываем все кроме того, что должны открыть
+	  $('.accordeon .acc-body').not($(this).next()).slideUp(1000);
+	// открываем или скрываем блок под заголовоком, по которому кликнули
+	    $(this).next().slideToggle(1000);
+	}
+
+
+
+	$("#scopes .scopes-icon1").on({
 	    mouseenter: function () {
 			$("#scopes .text1 p").css("display","block");
-			$("#scopes .scopes-icon1").css("top","-20%");
 	    },
 	    mouseleave: function () {
 			$("#scopes .text1 p").css("display","none");
-			$("#scopes .scopes-icon1").css("top","-63%");
 	    }
 		});
 		$("#scopes .scopes-icon2").on({
 		    mouseenter: function () {
 				$("#scopes .text2 p").css("display","block");
-				$("#scopes .scopes-icon2").css("top","-20%");
 		    },
 		    mouseleave: function () {
 				$("#scopes .text2 p").css("display","none");
-				$("#scopes .scopes-icon2").css("top","-63%");
 		    }
 		});
 		$("#scopes .scopes-icon3").on({
 		    mouseenter: function () {
 				$("#scopes .text3 p").css("display","block");
-				$("#scopes .scopes-icon3").css("top","-20%");
 		    },
 		    mouseleave: function () {
 				$("#scopes .text3 p").css("display","none");
-				$("#scopes .scopes-icon3").css("top","-63%");
 		    }
 		});
 		$("#scopes .scopes-icon4").on({
 		    mouseenter: function () {
 				$("#scopes .text4 p").css("display","block");
-				$("#scopes .scopes-icon4").css("top","-20%");
 		    },
 		    mouseleave: function () {
 				$("#scopes .text4 p").css("display","none");
-				$("#scopes .scopes-icon4").css("top","-63%");
 		    }
 		});
 		$("#scopes .scopes-icon5").on({
 		    mouseenter: function () {
 				$("#scopes .text5 p").css("display","block");
-				$("#scopes .scopes-icon5").css("top","-20%");
 		    },
 		    mouseleave: function () {
 				$("#scopes .text5 p").css("display","none");
-				$("#scopes .scopes-icon5").css("top","-63%");
 		    }
 		});
 		$("#scopes .scopes-icon6").on({
 		    mouseenter: function () {
 				$("#scopes .text6 p").css("display","block");
-				$("#scopes .scopes-icon6").css("top","-20%");
 		    },
 		    mouseleave: function () {
 				$("#scopes .text6 p").css("display","none");
-				$("#scopes .scopes-icon6").css("top","-63%");
 		    }
 		});
 		$("#scopes .scopes-icon7").on({
 		    mouseenter: function () {
 				$("#scopes .text7 p").css("display","block");
-				$("#scopes .scopes-icon7").css("top","-20%");
 		    },
 		    mouseleave: function () {
 				$("#scopes .text7 p").css("display","none");
-				$("#scopes .scopes-icon7").css("top","-63%");
 		    }
 		});
-		}
-	});
 	
 
 
@@ -345,37 +360,37 @@ $(document).ready(function() {
 		for(var j = 1;j<2;j++){
 				setTimeout(function(){
 		            $( ".icon1").animate({
-			        width: "18%",
+			        width: "17.5%",
 			      },500 ); 
 		        }, 500);
 				setTimeout(function(){
 		            $( ".icon2").animate({
-			        width: "18%",
+			        width: "17.5%",
 			      }, 500 ); 
 		        }, 1000);
 		        setTimeout(function(){
 		            $( ".icon3").animate({
-			        width: "18%",
+			        width: "17.5%",
 			      }, 500 ); 
 		        }, 1500);
 		        setTimeout(function(){
 		            $( ".icon4").animate({
-			        width: "18%",
+			        width: "17.5%",
 			      }, 500 ); 
 		        }, 2000);
 		        setTimeout(function(){
 		            $( ".icon5").animate({
-			        width: "18%",
+			        width: "17.5%",
 			      }, 500 ); 
 		        }, 2500);
 		        setTimeout(function(){
 		            $( ".icon6").animate({
-			        width: "18%",
+			        width: "17.5%",
 			      }, 500 ); 
 		        }, 3000);
 		        setTimeout(function(){
 		            $( ".icon7").animate({
-			        width: "18%",
+			        width: "17.5%",
 			      }, 500 ); 
 		        }, 3500);
 

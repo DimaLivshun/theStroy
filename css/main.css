@@ -268,14 +268,14 @@ ul{
     flex-direction: row;
     justify-content: center;
     bottom: 16%;
-    left: 43.8%;
+    left: 43.55%;
     z-index: 1;
     min-width: 175px;
     text-align: center;
 }
 #nav-block .scroll-button a .button-down{
 	position: absolute;
-	width: 30%;
+	width: 35%;
 }
 
 #benefits{
@@ -529,7 +529,7 @@ float:left;
 #works .wrap .collback-button a .gelery-button{
 	position: absolute;
     width: 10%;
-    bottom: 4.2%;
+    bottom: 4.1%;
     right: 16.5%;
 }
 #works .block-icon{
@@ -558,53 +558,56 @@ float:left;
     align-items: flex-start;
     margin: 0 21%;
     padding: 0;
+    width: 62%;
 }
 #scopes .wrap .title p{
 	color: #2674f4;
 	font-size: 36px;
 	font-family: "CenturyGothicBold";
-	margin-top:60px;
+	margin:60px 0;
 	text-transform: uppercase;
 }
 #scopes .wrap .scopes-content{
-	width: 90%;
+	width: 95%;
     position: relative;
     display: flex;
     align-self: center;
-    margin-bottom: 4%
+    margin-bottom: 2%;
+    margin-left: 5%;
 }
 #scopes .wrap .scopes-content ul{
 	width: 100%
 }
 #scopes .wrap .scopes-content ul li{
-	margin: 0 0 6.5% 0;
+	margin:0;
 	position: relative;
 }
 #scopes .wrap .scopes-content ul li .scopes-icon1,.scopes-icon2,.scopes-icon3,.scopes-icon4,.scopes-icon5,.scopes-icon6,.scopes-icon7{
 	position: absolute;
-    width: 6.5%;
-    left: -6%;
-    top: -63%;
+    width: 7.5%;
+    left: -3%;
+    top: -10%;
 }
 #scopes .wrap .scopes-content ul li i{
-	margin-left: 5%;
-	font-size: 13px;
+	margin-left: 8%;
+	font-size: 22px;
 	color: #000;
 	font-family: "CenturyGothicBold";
 	font-style: normal;
 	text-transform: uppercase;
 }
 #scopes .wrap .scopes-content ul li span{
-	border-top: 1px solid #000;
+	border-top: 2px solid #000;
     display: block;
+    min-height: 74px;
 }
 #scopes .wrap .scopes-content ul li span p{
 	font-size: 14px;
 	color: #0060ff;
 	font-family: "CenturyGothic";
 	width: 90%;
-    margin: 0 auto;
-    display: none;
+	margin: 0 auto;
+	display: none;
 }
 #scopes .wrap .scopes-content ul li .icon:hover  span p{
     display: block;
@@ -614,14 +617,12 @@ float:left;
     text-align: center;
     margin-bottom: 39px;
 }
-#scopes .wrap .collback-button a{
-	text-transform: uppercase;
-    text-decoration: none;
-    background: #0778ff;
-    padding: 15px 20px;
-    color: #fff;
+#scopes .wrap .collback-button a .button{
+	width: 16%;
+	position: absolute;
+	left: 44%;
+	bottom: 3%
 }
-
 #scopes .block-icon{
 	position: absolute;
     bottom: 2%;
@@ -632,8 +633,261 @@ float:left;
     width: 100%;
 }
 
+#options{
+	background-image: url('../img/bg-image/options-bg.jpg');
+	background-size: 100%;
+    position: relative;
+}
+#options .wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 0 21%;
+    padding: 0;
+    width: 62%;
+}
+#options .wrap .title{
+	margin:60px 0;
+}
+#options .wrap .title p{
+	color: #2674f4;
+	font-size: 36px;
+	font-family: "CenturyGothicBold";
+	margin:0;
+	text-transform: uppercase;
+}
+#options .wrap .options-content {
+    width: 90%;
+    position: relative;
+    display: flex;
+    align-self: center;
+    margin-bottom: 2%;
+}
+#options .wrap .accordeon {
+    width: 93%;
+    margin-left: 9%;
+    margin-bottom: 6%;
+    position: relative;
+}
+#options .wrap .accordeon .acc-head .button-block{
+	width: 6%;
+	cursor: pointer;
+	position: absolute;
+	bottom: -9%;
+	left: -3%;
+}
+#options .wrap .accordeon .acc-head i{
+	margin-left: 8%;
+	font-size: 22px;
+	color: #000;
+	font-family: "CenturyGothicBold";
+	font-style: normal;
+	text-transform: uppercase;
+}
+#options .wrap .accordeon .acc-head {
+	border-top: 2px solid #000;
+	padding: 1.6% 0;
+	position: relative;
+}
+#options .wrap .accordeon .last {
+	border-bottom: 2px solid #000;
+}
+#options .wrap .accordeon .lastbody {
+	border-top:none!important;
+	border-bottom: 2px solid #000;
+}
+#options .wrap .accordeon .acc-body {
+    padding: 10px;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    display: none;
+}
+#options .wrap .accordeon .acc-body table tr td{
+	font-size: 14px;
+	color: #0060ff;
+	font-family: "CenturyGothicBold";
+	width: 90%;
+	margin: 0 auto;
+}
+#options .wrap .accordeon .acc-body table{
+	width: 70%;
+    padding-left: 2%;
+    padding-bottom: 5px;
+}
+#options .wrap .collback-button {
+    width: 94%;
+    text-align: center;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-self: flex-end;
+}
+#options .wrap .collback-button a .buttoncb {
+    position: absolute;
+    width: 10%;
+    left: 48%;
+    bottom: 4%;
+}
+#options .wrap .collback-button a .price-button {
+    position: absolute;
+    width: 10%;
+    bottom: 4.1%;
+    right: 16.5%;
+}
 
-
+#reviews{
+	background-image: url('../img/bg-image/reviews-bg.jpg');
+	background-size: 100%;
+    position: relative;
+}
+#reviews .wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 0 21%;
+    padding: 0;
+    width: 62%;
+}
+#reviews .wrap .title{
+	margin:60px 0;
+}
+#reviews .wrap .title p{
+	color: #2674f4;
+	font-size: 36px;
+	font-family: "CenturyGothicBold";
+	margin:0;
+	text-transform: uppercase;
+}
+#reviews .wrap .carousel-reviews{
+	margin-bottom: 16%;
+}
+#reviews .wrap .carousel-reviews .reviews_item{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#reviews .wrap .carousel-reviews .reviews_item .reviews-block{
+	background: #fff;
+	padding: 30px;
+    display: flex;
+}
+#reviews .wrap .carousel-reviews .reviews_item .photo-reviews{
+	display: flex;
+    flex-direction: column;
+}
+#reviews .wrap .carousel-reviews .reviews_item .photo-reviews{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#reviews .wrap .carousel-reviews .reviews_item .photo-reviews .photo{
+	margin-bottom: 15px;
+}
+#reviews .wrap .carousel-reviews .reviews_item .photo-reviews .photo img{
+	position: relative;
+	z-index: 1;
+}
+#reviews .wrap .carousel-reviews .reviews_item .photo-reviews .border{
+	position: absolute;
+    border: 2px solid #000;
+    width: 65%;
+    height: 53%;
+    left: 49.5%;
+    bottom: 12%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+#reviews .wrap .carousel-reviews .reviews_item .photo-reviews i{
+	color:#001840;
+	font-size: 26px;
+	font-family: "CenturyGothicBold";
+	font-style: normal;
+}
+#reviews .wrap .carousel-reviews .reviews_item .reviews-info{
+	display: flex;
+    flex-direction: column;
+}
+#reviews .wrap .carousel-reviews .reviews_item .reviews-info i{
+	color: #001840;
+    font-size: 26px;
+    font-family: "CenturyGothicBold";
+    font-style: normal;
+}
+#reviews .wrap .carousel-reviews .reviews_item .reviews-info .date{
+	text-align: right;
+}
+#reviews .wrap .carousel-reviews .reviews_item .reviews-info p{
+	font-size: 16px;
+    color: #0060ff;
+    font-family: "CenturyGothic";
+    width: 90%;
+    margin: 20px auto 50px;
+}
+#reviews .wrap .owl-controls{
+	position: absolute;
+    left: 40%;
+    bottom: -28%;
+}
+#reviews .wrap .owl-controls .owl-page{
+	width: 21px;
+	height: 21px;
+	background-color: #b4b2ff;
+	display: inline-block;
+	margin: 11px;
+	opacity: .9;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+#reviews .owl-controls .owl-page.active{
+	background-color: #6a66ff;
+	opacity: 1;
+}
+#reviews .wrap .collback-button{
+	width: 100%;
+    text-align: center;
+    margin-bottom: 39px;
+}
+#reviews .wrap .collback-button a .button{
+	width: 13%;
+	position: absolute;
+	left: 44%;
+	bottom: 3%
+}
+#reviews .block-icon {
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+    width: 10%;
+}
+#reviews .block-icon img {
+    width: 100%;
+}
 
 
 
