@@ -2,6 +2,9 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1918px) {
+#nav-block .wrap {
+    left: 16.5%;
+}
 #benefits .wrap .schedule{
 margin:4% auto;
 }
@@ -26,7 +29,11 @@ margin:4% auto;
 #options .wrap .accordeon .acc-head .button-block {
     width: 6.5%;
 }
+#reviews .wrap .carousel-reviews .reviews_item .reviews-info p {
+    font-size: 15px;
+}
 
+}
 @media only screen and (max-width : 1600px) {
 #nav-block .wrap .nav-logo .nav-bar li a {
     font-size: 19px;
@@ -80,6 +87,14 @@ margin:4% auto;
 #options .wrap .accordeon .acc-head .button-block {
     width: 7.5%;
     left: -3.5%;
+}
+#reviews .wrap .carousel-reviews .reviews_item .photo-reviews .border{
+    height: 48%;
+    top: 27%;
+}
+#reviews .wrap .owl-controls {
+    left: 35%;
+    bottom: -23%;
 }
 }
 
@@ -203,8 +218,17 @@ margin:4% auto;
     font-size: 10px;
 }
 #options .wrap .accordeon .acc-head .button-block {
-    width: 8.5%;
+    width: 7.7%;
     left: -4%;
+}
+#reviews .wrap .carousel-reviews .reviews_item .photo-reviews .border{
+    height: 33%;
+    top: 20%;
+    width: 66%;
+}
+#reviews .wrap .owl-controls {
+    left: 33%;
+    bottom: -15%;
 }
 }
 

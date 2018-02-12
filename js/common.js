@@ -40,6 +40,7 @@ $(document).ready(function() {
 	owl.owlCarousel({
 		items : 1,
 		responsive : true,
+		autoHeight : true,
 		responsiveRefreshRate : 200,
 		itemsCustom : [
         [0, 1],
@@ -94,6 +95,7 @@ $(document).ready(function() {
 		}, 800);
 		return false;
 	});
+
 	
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
@@ -125,7 +127,7 @@ $(document).ready(function() {
         //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({scrollTop: top}, 1500);
     });
-    $(".nav-bar").on("click","a", function (event) {
+    $(".nav-bar").on("click","a.thispage", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
  
@@ -360,73 +362,101 @@ $(document).ready(function() {
 		for(var j = 1;j<2;j++){
 				setTimeout(function(){
 		            $( ".icon1").animate({
-			        width: "17.5%",
+			        width: "18%",
+			        left : "-0.8%",
+			        top : "-10.8%",
 			      },500 ); 
 		        }, 500);
 				setTimeout(function(){
 		            $( ".icon2").animate({
-			        width: "17.5%",
+			        width: "18%",
+			        left : "26.8%",
+			        top : "-11%",
 			      }, 500 ); 
 		        }, 1000);
 		        setTimeout(function(){
 		            $( ".icon3").animate({
-			        width: "17.5%",
+			        width: "18%",
+			        top : "-11%",
+			        right : "27.5%",
 			      }, 500 ); 
 		        }, 1500);
 		        setTimeout(function(){
 		            $( ".icon4").animate({
-			        width: "17.5%",
+			        width: "18%",
+			        top : "-11%",
+			        right : "0.8%",
 			      }, 500 ); 
 		        }, 2000);
 		        setTimeout(function(){
 		            $( ".icon5").animate({
-			        width: "17.5%",
+			        width: "18%",
+			        top: "25.5%",
+    				left: "40.9%",
 			      }, 500 ); 
 		        }, 2500);
 		        setTimeout(function(){
 		            $( ".icon6").animate({
-			        width: "17.5%",
+			        width: "18%",
+			        left : "27%",
+			        bottom : "10%",
 			      }, 500 ); 
 		        }, 3000);
 		        setTimeout(function(){
 		            $( ".icon7").animate({
-			        width: "17.5%",
+			        width: "18%",
+		        	left : "54.7%",
+			        bottom : "9.6%",
 			      }, 500 ); 
 		        }, 3500);
 
 		        setTimeout(function(){
 		            $( ".icon1").animate({
 			        width: "17%",
+			        left : "-0.4%",
+			        top : "-10.2%",
 			      }, 500 ); 
 		        }, 4000);
 		        setTimeout(function(){
 		            $( ".icon2").animate({
 			        width: "17%",
+			        left : "27.5%",
+			        top : "-10.2%",
 			      }, 500 ); 
 		        }, 4000);
 		        setTimeout(function(){
 		            $( ".icon3").animate({
 			        width: "17%",
+			        right : "27.5%",
+			        top : "-10.2%",
 			      }, 500 ); 
 		        }, 4000);
 		        setTimeout(function(){
 		            $( ".icon4").animate({
 			        width: "17%",
+			        right : "0.4%",
+			        top : "-10.2%",
 			      }, 500 ); 
 		        }, 4000);
 		        setTimeout(function(){
 		            $( ".icon5").animate({
 			        width: "17%",
+			        left : "41.4%",
+			        top : "27%",
 			      }, 500 ); 
 		        }, 4000);
 		        setTimeout(function(){
 		            $( ".icon6").animate({
 			        width: "17%",
+			        left : "27.6%",
+			        bottom : "10%",
 			      }, 500 ); 
 		        }, 4000);
 		        setTimeout(function(){
 		            $( ".icon7").animate({
 			        width: "17%",
+			        left : "55%",
+			        bottom : "10%",
 			      }, 500 ); 
 		        }, 4000);
 			}

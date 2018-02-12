@@ -27,7 +27,6 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	/* min-width: 1300px; */
 	min-width: 1000px;
 }
 .all-page-wrap{
@@ -502,7 +501,7 @@ float:left;
 #works .wrap .photoset1 .photo6{
     position: relative;
     bottom: 5px;
-    left: -0.5%;
+    left: -0.4%;
     width: 18.3%;
 }
 #works .wrap .photoset1 .photo7{
@@ -526,7 +525,7 @@ float:left;
     left: 48%;
     bottom: 4%;
 }
-#works .wrap .collback-button a .gelery-button{
+#works .wrap .collback-button a .gallery-button{
 	position: absolute;
     width: 10%;
     bottom: 4.1%;
@@ -769,6 +768,8 @@ float:left;
 }
 #reviews .wrap .carousel-reviews{
 	margin-bottom: 16%;
+	width: 95%;
+    align-self: flex-end;
 }
 #reviews .wrap .carousel-reviews .reviews_item{
 	display: flex;
@@ -800,10 +801,10 @@ float:left;
 #reviews .wrap .carousel-reviews .reviews_item .photo-reviews .border{
 	position: absolute;
     border: 2px solid #000;
-    width: 65%;
+    width: 67%;
     height: 53%;
-    left: 49.5%;
-    bottom: 12%;
+    left: 50%;
+    top: 33%;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -830,16 +831,19 @@ float:left;
     font-size: 26px;
     font-family: "CenturyGothicBold";
     font-style: normal;
+    margin-right: 7%;
 }
 #reviews .wrap .carousel-reviews .reviews_item .reviews-info .date{
 	text-align: right;
+	position: absolute;
+    bottom: 9%;
+    right: 2%;
 }
 #reviews .wrap .carousel-reviews .reviews_item .reviews-info p{
 	font-size: 16px;
     color: #0060ff;
     font-family: "CenturyGothic";
-    width: 90%;
-    margin: 20px auto 50px;
+    margin: 20px 0 11% 43px;
 }
 #reviews .wrap .owl-controls{
 	position: absolute;
@@ -874,10 +878,10 @@ float:left;
     margin-bottom: 39px;
 }
 #reviews .wrap .collback-button a .button{
-	width: 13%;
-	position: absolute;
-	left: 44%;
-	bottom: 3%
+	width: 11%;
+    position: absolute;
+    left: 48%;
+    bottom: 6%;
 }
 #reviews .block-icon {
     position: absolute;
@@ -974,4 +978,78 @@ float:left;
 	font-size: 14px;
 	font-family: "CenturyGothic";
 	line-height: 48px;
+}
+
+
+
+
+
+
+
+
+
+/* gellery */
+#all-gellery-wrap{
+	position: relative;
+	background-color: #d2dbff;
+}
+#all-gellery-wrap .all-page-content {
+    margin: 0 auto;
+    max-width: 1920px;
+    position: relative;
+    background: transparent;
+}
+#all-gellery-wrap .wrap .nav-logo{
+	background-color: #ffffff;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+#all-gellery-wrap .wrap .nav-logo .nav-bar ul{
+	margin: 0;
+	margin-right: 10px;
+}
+#all-gellery-wrap .wrap .nav-logo .nav-bar li{
+	text-transform: uppercase;
+	font-family: "CenturyGothicBold";
+	padding: 20px 20px;
+	text-align: center;
+}
+#all-gellery-wrap .wrap .nav-logo .nav-bar li a{
+	color: #001840;
+	text-decoration: none;
+	font-size: 22px;
+	white-space: pre-line;
+}
+#all-gellery-wrap .wrap .nav-logo .nav-bar li a:hover{
+	color: #001840;
+	text-decoration: underline;
+}
+#all-gellery-wrap .wrap .nav-logo .nav-bar{
+	float: right;
+}
+#all-gellery-wrap .wrap .nav-logo .nav-bar li{
+	float: left;
+}
+#all-gellery-wrap .wrap .nav-logo .logo{
+	width: 150px;
+	height: 80px;
+	margin: 10px;
+	background-color: #000000;
+}
+#all-gellery-wrap .all-page-content .page-content{
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+}
+#all-gellery-wrap .all-page-content .page-content .page-content-row{
+    position: relative;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
 }
