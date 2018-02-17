@@ -58,6 +58,7 @@ $(document).ready(function() {
 	owl.owlCarousel({
 		items : 1,
 		responsive : true,
+		autoPlay: 5000,
 		responsiveRefreshRate : 200,
 		itemsCustom : [
         [0, 1],
@@ -70,20 +71,6 @@ $(document).ready(function() {
         [1600, 1]
       ],
 	});
-	/*owl.on("mousewheel", ".owl-wrapper", function (e) {
-		if (e.deltaY > 0) {
-			owl.trigger("owl.prev");
-		} else {
-			owl.trigger("owl.next");
-		}
-		e.preventDefault();
-	});*/
-	/*$(".next_button").click(function(){
-		owl.trigger("owl.next");
-	});
-	$(".prev_button").click(function(){
-		owl.trigger("owl.prev");
-	});*/
 
 	//Кнопка "Наверх"
 	//Документация:
@@ -194,7 +181,7 @@ $(document).ready(function() {
 	            'margin-top': q_height
 	        });
 			//выводим затемение страницы и делаем полупрозрачным
-	        $('.all-page-wrap').append('<div id="fade"></div>');
+	        $('.all-page-wrap , #all-gallery-wrap , #all-album-wrap').append('<div id="fade"></div>');
 	        $('#fade').css({'filter' : 'alpha(opacity=40)'}).fadeIn();
 			return false;
 		});
@@ -210,75 +197,6 @@ $(document).ready(function() {
 
 	});
 
-    //Увеличение SVG по скроллу на блок
-    /*function come(elem) {
-	  	var docViewTop = $(window).scrollTop(),
-		    docViewBottom = docViewTop + $(window).height(),
-		    elemTop = $(elem).offset().top,
-		    elemBottom = elemTop + $(elem).height();
-
-			return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-	}
-	if(come('#benefits')){
-		$('.icon1')css.('width','17%').delay(500);
-		$('.icon2')css.('width','17%').delay(1000);
-		$('.icon3')css.('width','17%').delay(1500);
-		$('.icon4')css.('width','17%').delay(2000);
-		$('.icon5')css.('width','17%').delay(2500);
-		$('.icon6')css.('width','17%').delay(3000);
-		$('.icon7')css.('width','17%').delay(3500);
-	}*/
-
-/*	var iconTransform = function(){
-		for(var j = 1;j<10;j++){
-			for(var i = 1;i<2;i++){
-				$( ".icon1").animate({
-			        width: "18%",
-			      }, 1000 );
-				$( ".icon2").animate({
-			        width: "18%",
-			      }, 1000 );
-				$( ".icon3").animate({
-			        width: "18%",
-			      }, 1000 );
-				$( ".icon4").animate({
-			        width: "18%",
-			      }, 1000 );
-				$( ".icon5").animate({
-			        width: "18%",
-			      }, 1000 );
-				$( ".icon6").animate({
-			        width: "18%",
-			      }, 1000 );
-				$( ".icon7").animate({
-			        width: "18%",
-			      }, 1000 );
-			}
-			for(var i = 1;i<8;i++){
-				$( ".icon1").animate({
-			        width: "17%",
-			      }, 1000 );
-				$( ".icon2").animate({
-			        width: "17%",
-			      }, 1000 );
-				$( ".icon3").animate({
-			        width: "17%",
-			      }, 1000 );
-				$( ".icon4").animate({
-			        width: "17%",
-			      }, 1000 );
-				$( ".icon5").animate({
-			        width: "17%",
-			      }, 1000 );
-				$( ".icon6").animate({
-			        width: "17%",
-			      }, 1000 );
-				$( ".icon7").animate({
-			        width: "17%",
-			      }, 1000 );
-			}
-		}	
-	}*/
 
 
 	//dropdown///////////////////////////////////////////////////
@@ -294,172 +212,105 @@ $(document).ready(function() {
 	    $(this).next().slideToggle(1000);
 	}
 
+	$(document).ready(function() {
+	  //прикрепляем клик по заголовкам acc-head
+	    $('.scopes-content .acc-head2 ').on('click', f_acc2);
+	});
 
-
-	$("#scopes .scopes-icon1").on({
-	    mouseenter: function () {
-			$("#scopes .text1 p").css("display","block");
-	    },
-	    mouseleave: function () {
-			$("#scopes .text1 p").css("display","none");
-	    }
-		});
-		$("#scopes .scopes-icon2").on({
-		    mouseenter: function () {
-				$("#scopes .text2 p").css("display","block");
-		    },
-		    mouseleave: function () {
-				$("#scopes .text2 p").css("display","none");
-		    }
-		});
-		$("#scopes .scopes-icon3").on({
-		    mouseenter: function () {
-				$("#scopes .text3 p").css("display","block");
-		    },
-		    mouseleave: function () {
-				$("#scopes .text3 p").css("display","none");
-		    }
-		});
-		$("#scopes .scopes-icon4").on({
-		    mouseenter: function () {
-				$("#scopes .text4 p").css("display","block");
-		    },
-		    mouseleave: function () {
-				$("#scopes .text4 p").css("display","none");
-		    }
-		});
-		$("#scopes .scopes-icon5").on({
-		    mouseenter: function () {
-				$("#scopes .text5 p").css("display","block");
-		    },
-		    mouseleave: function () {
-				$("#scopes .text5 p").css("display","none");
-		    }
-		});
-		$("#scopes .scopes-icon6").on({
-		    mouseenter: function () {
-				$("#scopes .text6 p").css("display","block");
-		    },
-		    mouseleave: function () {
-				$("#scopes .text6 p").css("display","none");
-		    }
-		});
-		$("#scopes .scopes-icon7").on({
-		    mouseenter: function () {
-				$("#scopes .text7 p").css("display","block");
-		    },
-		    mouseleave: function () {
-				$("#scopes .text7 p").css("display","none");
-		    }
-		});
+	function f_acc2(){
+	//скрываем все кроме того, что должны открыть
+	  $('.scopes-content .acc-body2').not($(this).next()).slideUp(700);
+	// открываем или скрываем блок под заголовоком, по которому кликнули
+	    $(this).next().slideToggle(700);
+	}
 	
 
-
-
-
-
-	function iconTransform(){
-		for(var j = 1;j<2;j++){
-				setTimeout(function(){
-		            $( ".icon1").animate({
-			        width: "18%",
-			        left : "-0.8%",
-			        top : "-10.8%",
-			      },500 ); 
-		        }, 500);
-				setTimeout(function(){
-		            $( ".icon2").animate({
-			        width: "18%",
-			        left : "26.8%",
-			        top : "-11%",
-			      }, 500 ); 
-		        }, 1000);
-		        setTimeout(function(){
-		            $( ".icon3").animate({
-			        width: "18%",
-			        top : "-11%",
-			        right : "27.5%",
-			      }, 500 ); 
-		        }, 1500);
-		        setTimeout(function(){
-		            $( ".icon4").animate({
-			        width: "18%",
-			        top : "-11%",
-			        right : "0.8%",
-			      }, 500 ); 
-		        }, 2000);
-		        setTimeout(function(){
-		            $( ".icon5").animate({
-			        width: "18%",
-			        top: "25.5%",
-    				left: "40.9%",
-			      }, 500 ); 
-		        }, 2500);
-		        setTimeout(function(){
-		            $( ".icon6").animate({
-			        width: "18%",
-			        left : "27%",
-			        bottom : "10%",
-			      }, 500 ); 
-		        }, 3000);
-		        setTimeout(function(){
-		            $( ".icon7").animate({
-			        width: "18%",
-		        	left : "54.7%",
-			        bottom : "9.6%",
-			      }, 500 ); 
-		        }, 3500);
-
-		        setTimeout(function(){
-		            $( ".icon1").animate({
-			        width: "17%",
-			        left : "-0.4%",
-			        top : "-10.2%",
-			      }, 500 ); 
-		        }, 4000);
-		        setTimeout(function(){
-		            $( ".icon2").animate({
-			        width: "17%",
-			        left : "27.5%",
-			        top : "-10.2%",
-			      }, 500 ); 
-		        }, 4000);
-		        setTimeout(function(){
-		            $( ".icon3").animate({
-			        width: "17%",
-			        right : "27.5%",
-			        top : "-10.2%",
-			      }, 500 ); 
-		        }, 4000);
-		        setTimeout(function(){
-		            $( ".icon4").animate({
-			        width: "17%",
-			        right : "0.4%",
-			        top : "-10.2%",
-			      }, 500 ); 
-		        }, 4000);
-		        setTimeout(function(){
-		            $( ".icon5").animate({
-			        width: "17%",
-			        left : "41.4%",
-			        top : "27%",
-			      }, 500 ); 
-		        }, 4000);
-		        setTimeout(function(){
-		            $( ".icon6").animate({
-			        width: "17%",
-			        left : "27.6%",
-			        bottom : "10%",
-			      }, 500 ); 
-		        }, 4000);
-		        setTimeout(function(){
-		            $( ".icon7").animate({
-			        width: "17%",
-			        left : "55%",
-			        bottom : "10%",
-			      }, 500 ); 
-		        }, 4000);
+		$('#scopes .scopes-icon1').toggle(
+			function(e){
+				$('#scopes .text1 p').css("display","block");
+				e.preventDefault();
+			},
+			function(e){
+				$("#scopes .text1 p").css("display","none");
+				e.preventDefault();
 			}
-		}
-	window.onload = iconTransform();
+		);
+		$('#scopes .scopes-icon2').toggle(
+			function(e){
+				$('#scopes .text2 p').css("display","block");
+				e.preventDefault();
+			},
+			function(e){
+				$("#scopes .text2 p").css("display","none");
+				e.preventDefault();
+			}
+		);
+		$('#scopes .scopes-icon3').toggle(
+			function(e){
+				$('#scopes .text3 p').css("display","block");
+				e.preventDefault();
+			},
+			function(e){
+				$("#scopes .text3 p").css("display","none");
+				e.preventDefault();
+			}
+		);
+		$('#scopes .scopes-icon4').toggle(
+			function(e){
+				$('#scopes .text4 p').css("display","block");
+				e.preventDefault();
+			},
+			function(e){
+				$("#scopes .text4 p").css("display","none");
+				e.preventDefault();
+			}
+		);
+		$('#scopes .scopes-icon5').toggle(
+			function(e){
+				$('#scopes .text5 p').css("display","block");
+				e.preventDefault();
+			},
+			function(e){
+				$("#scopes .text5 p").css("display","none");
+				e.preventDefault();
+			}
+		);
+		$('#scopes .scopes-icon6').toggle(
+			function(e){
+				$('#scopes .text6 p').css("display","block");
+				e.preventDefault();
+			},
+			function(e){
+				$("#scopes .text6 p").css("display","none");
+				e.preventDefault();
+			}
+		);
+		$('#scopes .scopes-icon7').toggle(
+			function(e){
+				$('#scopes .text7 p').css("display","block");
+				$('#scopes .scopes-icon7').css("top","-5%");
+				e.preventDefault();
+			},
+			function(e){
+				$("#scopes .text7 p").css("display","none");
+				$('#scopes .scopes-icon7').css("top","-8%");
+				e.preventDefault();
+			}
+		);
+	//Попап галерея для альбома
+	$("a.photo-gallery").fancybox({						
+         "padding" : 20,
+         "imageScale" : false, 
+		"zoomOpacity" : false,
+		"zoomSpeedIn" : 1000,	
+		"zoomSpeedOut" : 1000,	
+		"zoomSpeedChange" : 1000, 
+		"frameWidth" : 700,	 
+		"frameHeight" : 600, 
+		"overlayShow" : true, 
+		"overlayOpacity" : 0.8,	
+		"hideOnContentClick" :false,
+		"centerOnScroll" : false			
+	});
+
 });

@@ -20,7 +20,6 @@ class mysql {
 				default: return $q;
 			}
 		} else {
-			print 'Mysql error: '.mysql_error();
 			return false;
 		}
 		//~ !!! DANGER !!!

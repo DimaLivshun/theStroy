@@ -18,7 +18,7 @@ margin:4% auto;
     margin-bottom: 39px;
 }
 #scopes .wrap .scopes-content ul li .scopes-icon1,.scopes-icon2,.scopes-icon3,.scopes-icon4,.scopes-icon5,.scopes-icon6,.scopes-icon7{
-    top: -4%;
+    top: -8%;
 }
 #scopes .wrap .title p {
     margin: 30px 0;
@@ -26,8 +26,12 @@ margin:4% auto;
 #scopes .wrap .scopes-content ul li span{
     min-height: 60px;
 }
+#scopes .wrap .scopes-content .acc-head2 .button-block2 {
+    bottom: -26%;
+}
 #options .wrap .accordeon .acc-head .button-block {
-    width: 6.5%;
+    width: 6.3%;
+    left: -3%;
 }
 #reviews .wrap .carousel-reviews .reviews_item .reviews-info p {
     font-size: 15px;
@@ -36,6 +40,12 @@ margin:4% auto;
 }
 @media only screen and (max-width : 1600px) {
 #nav-block .wrap .nav-logo .nav-bar li a {
+    font-size: 19px;
+}
+#all-gallery-wrap .wrap .nav-logo .nav-bar li a {
+    font-size: 19px;
+}
+#all-album-wrap .wrap .nav-logo .nav-bar li a {
     font-size: 19px;
 }
 #nav-block .wrap .offer {
@@ -72,6 +82,9 @@ margin:4% auto;
     font-size: 28px;
     margin:20px 0 20px 0;
 }
+#scopes .wrap .scopes-content .acc-head2 .button-block2 {
+    bottom: -27%;
+}
 #nav-block .wrap {
     left: 11.5%;
 }
@@ -85,8 +98,8 @@ margin:4% auto;
     min-height: 45px;
 }
 #options .wrap .accordeon .acc-head .button-block {
-    width: 7.5%;
-    left: -3.5%;
+    width: 6.5%;
+    left: -3.2%;
 }
 #reviews .wrap .carousel-reviews .reviews_item .photo-reviews .border{
     height: 48%;
@@ -103,11 +116,14 @@ margin:4% auto;
     left: 11.1%;
     height: 70%;
 }
-#nav-block .wrap .nav-logo .logo {
-    display: flex;
-}
 #nav-block .wrap .nav-logo .nav-bar li a {
-    font-size: 13px;
+    font-size: 14px;
+}
+#all-gallery-wrap .wrap .nav-logo .nav-bar li a {
+    font-size: 14px;
+}
+#all-album-wrap .wrap .nav-logo .nav-bar li a {
+    font-size: 14px;
 }
 #nav-block .wrap .offer{
 	margin: 10px 0;
@@ -166,32 +182,32 @@ margin:4% auto;
     width: 89%;
 }
 #works .wrap .photoset1 .photo1{
-    width: 16%;
+    width: 17.2%;
 }
 #works .wrap .photoset1 .photo2{
-    width: 36.06%;
+    width: 38.7%;
     left: -0.7%;
 }
 #works .wrap .photoset1 .photo3{
-    width: 36.16%;
-    right: 1.29%;
+    width: 27.7%;
+    right: 1.4%;
 }
 #works .wrap .photoset1 .photo4{
-    width: 16%;
+    width: 17.3%;
     right: 0;
     top: 0px;
 }
 #works .wrap .photoset1 .photo5{
-    width: 43.35%;
+    width: 41.35%;
     bottom: 5px;
 }
 #works .wrap .photoset1 .photo6{
     bottom: 5px;
     left: -1%;
-    width: 19.37%;
+    width: 18.47%;
 }
 #works .wrap .photoset1 .photo7{
-    width: 43.2%;
+    width: 41.2%;
     /* left: 0; */
     bottom: 9px;
 }
@@ -217,18 +233,31 @@ margin:4% auto;
 #scopes .wrap .scopes-content ul li span p{
     font-size: 10px;
 }
+#scopes .wrap .scopes-content .acc-head2 i {
+    font-size: 20px;
+}
 #options .wrap .accordeon .acc-head .button-block {
-    width: 7.7%;
+    width: 8%;
     left: -4%;
+}
+#options .wrap .accordeon .acc-body table{
+    width: 100%;
 }
 #reviews .wrap .carousel-reviews .reviews_item .photo-reviews .border{
     height: 33%;
     top: 20%;
     width: 66%;
 }
+#options .wrap .accordeon .acc-head i {
+    font-size: 20px;
+}
 #reviews .wrap .owl-controls {
     left: 33%;
     bottom: -15%;
+}
+#all-gallery-wrap .all-page-content .page-content .page-content-row .work p {
+    font-size: 12px;
+    /* text-align: center; */
 }
 }
 
